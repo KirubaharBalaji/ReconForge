@@ -5,7 +5,7 @@ from exporter import export_to_file
 from input_parser import parse_inputs
 
 def parse_args():
-    parser = argparse.ArgumentParser(description="🎯 PassForge - Custom Wordlist Generator")
+    parser = argparse.ArgumentParser(description="🎯 ReconForge - Custom Wordlist Generator")
     parser.add_argument("--names", nargs='*', default=[], help="Target names")
     parser.add_argument("--nicknames", nargs='*', default=[], help="Nicknames")
     parser.add_argument("--pets", nargs='*', default=[], help="Pet names")

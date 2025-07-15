@@ -12,7 +12,7 @@ def get_image_base64(path):
 st.set_page_config(page_title="ReconForge", page_icon="🧠")
 
 # Embed logo into title
-logo_base64 = get_image_base64("reconforge_logobg.png")
+logo_base64 = get_image_base64("reconforge_logo.png")
 
 st.markdown(
     f"""

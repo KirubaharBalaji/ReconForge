@@ -1,5 +1,5 @@
 # 🔐 ReconForge — Intelligent Wordlist & Combo Generator
-
+![Reconforge](reconforge_logo.png)
 ![Python](https://img.shields.io/badge/python-3.8+-blue?style=flat-square)
 ![Streamlit](https://img.shields.io/badge/framework-Streamlit-ff4b4b?style=flat-square)
 ![Tests](https://img.shields.io/github/actions/workflow/status/Kirubahar%20Balaji/reconforge/tests.yml?label=unit%20tests&style=flat-square)
