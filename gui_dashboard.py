@@ -1,9 +1,30 @@
 import streamlit as st
 from generator import generate_wordlist
 from combo_generator import generate_combos
+from PIL import Image
+import base64
 
-st.set_page_config(page_title="PassForge", layout="centered")
-st.title("🔐 PassForge - Custom Wordlist Generator")
+
+def get_image_base64(path):
+    with open(path, "rb") as img_file:
+        return base64.b64encode(img_file.read()).decode()
+
+st.set_page_config(page_title="ReconForge", page_icon="🧠")
+
+# Embed logo into title
+logo_base64 = get_image_base64("reconforge_logobg.png")
+
+st.markdown(
+    f"""
+    <div style='text-align: center;'>
+        <img src='data:image/png;base64,{logo_base64}' width='150' style='vertical-align: middle; margin-bottom: 5px;' />
+        <span style='font-size: 32px; font-weight: normal; margin-left: 10px;'>ReconForge - Custom Wordlist Generator</span>
+    </div>
+    """,
+    unsafe_allow_html=True
+)
+
+
 
 def multivalue_input(label, help=None):
     raw = st.text_input(label, help=help)
@@ -70,4 +91,4 @@ if st.button("🚀 Generate"):
 
 # Footer
 st.markdown("---")
-st.caption("Made with ❤️ by PassForge | Streamlit GUI + CLI Ready")
+st.caption("Made with ❤️ by ReconForge | Streamlit GUI + CLI Ready")
